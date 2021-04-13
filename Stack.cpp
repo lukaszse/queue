@@ -30,7 +30,7 @@ int Stack::pop() {
         delete ptr;
         ptr = NULL;
         size--;
-        if(size == 0) {         // if(top == NULL) can be use instead
+        if(size == 0) {         // if(top == nulllptr) can be use instead
             empty = true;
         }
         return value;
