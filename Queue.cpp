@@ -12,12 +12,12 @@ int Queue::pop() {
         cout << "Cannot pop element from empty queue" << endl;
         return ELEMENT_NOT_EXIST;
     }
-    while (!mainStack->size == 1) {
+    while (mainStack->size > 1) {
         secondStack->push(mainStack->pop());
     }
     int value = mainStack->pop();
     Stack* ptr = mainStack;
     mainStack = secondStack;
-    secondStack = mainStack;
+    secondStack = ptr;
     return value;
 }
