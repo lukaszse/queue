@@ -13,11 +13,11 @@ int Queue::pop() {
         return ELEMENT_NOT_EXIST;
     }
     while (mainStack->size > 1) {
-        secondStack->push(mainStack->pop());
+        auxiliaryStack->push(mainStack->pop());
     }
     int value = mainStack->pop();
     Stack* ptr = mainStack;
-    mainStack = secondStack;
-    secondStack = ptr;
+    mainStack = auxiliaryStack;
+    auxiliaryStack = ptr;
     return value;
 }

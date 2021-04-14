@@ -8,13 +8,11 @@ class Queue {
 
 private:
     Stack* mainStack = new Stack;
-    Stack* secondStack = new Stack;
+    Stack* auxiliaryStack = new Stack;
 
 public:
     void push(int);
     int pop();
-
-
 };
 
 
