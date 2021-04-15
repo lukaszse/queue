@@ -3,7 +3,19 @@
 
 using namespace std;
 
-void Queue::push(int value) {
+Queue::Queue() {
+    mainStack = new Stack();
+    auxiliaryStack = new Stack();
+}
+
+Queue::~Queue() {
+    delete mainStack;
+    delete auxiliaryStack;
+    cout << "Queue was deleted from memory";
+}
+
+
+void Queue::push(const int value) {
     mainStack->push(value);
 }
 

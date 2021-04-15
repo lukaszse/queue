@@ -7,10 +7,12 @@
 class Queue {
 
 private:
-    Stack* mainStack = new Stack;
-    Stack* auxiliaryStack = new Stack;
+    Stack* mainStack;
+    Stack* auxiliaryStack;
 
 public:
+    Queue();
+    ~Queue();
     void push(int);
     int pop();
 };

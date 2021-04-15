@@ -13,7 +13,7 @@ struct Stack::Element {
     Element * next;
 };
 
-void Stack::push(int value) {
+void Stack::push(const int value) {
     Element* ptr = top;
     top = new Element;
     top->value = value;
