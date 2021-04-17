@@ -14,7 +14,6 @@ Queue::~Queue() {
     cout << "Queue was deleted from memory";
 }
 
-
 void Queue::push(const int value) {
     mainStack->push(value);
 }
