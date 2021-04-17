@@ -4,19 +4,13 @@
 
 using namespace std;
 int main() {
-
     cout << endl << "Implementacja kolejki na 2 stosach" << endl;
     auto* kolejka = new Queue();
-    int ILOSC_ELEMENTOW = 4;
-
-    for(int i = 1; i <= ILOSC_ELEMENTOW; i++) {
+    for(int i = 1; i <= 5; i++) {
         kolejka->add(i);
     }
-
-    for(int i = 1; i <= ILOSC_ELEMENTOW; i++) {
-        cout << kolejka->poll() << endl;
-    }
-
-    delete kolejka;
+    kolejka->takeAll();
+    //kolejka->poll();    // pobranie elementu z pustej kolejku spowoduje wyrzucenie wyjatku
+    delete kolejka;     // usuniecie obiektu kolejka typu Queue (wywolanie destruktora)
     return 0;
 }

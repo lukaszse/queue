@@ -33,6 +33,7 @@ int Stack::pop() {
         top = top->next;
         delete ptr;
         ptr = nullptr;
+        size--;
         top == nullptr ? empty = true : empty = false;
         return value;
     } else {

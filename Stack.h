@@ -10,17 +10,17 @@ class Stack {
 
 private:
     struct Element;
-    Element* top;
+    Element* top{};
 
 public:
-    int size;
-    bool empty;
+    int size{};
+    bool empty{};
 
     Stack();
+    ~Stack();
+    Stack(const Stack &);
     void push(int);
     int pop();
-
-    virtual ~Stack();
 };
 
 
