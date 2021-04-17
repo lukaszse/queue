@@ -1,5 +1,7 @@
 #include <iostream>
 #include <climits>
+#include "EmptyStackException.h"
+
 #ifndef INC_2STACKSTOQUEUE_STACK_H
 #define INC_2STACKSTOQUEUE_STACK_H
 #define ELEMENT_NOT_EXIST INT_MIN
@@ -17,6 +19,8 @@ public:
     Stack();
     void push(int);
     int pop();
+
+    virtual ~Stack();
 };
 
 

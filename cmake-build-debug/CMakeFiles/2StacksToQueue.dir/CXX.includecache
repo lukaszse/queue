@@ -6,13 +6,9 @@
 
 #IncludeRegexTransform: 
 
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Queue.cpp
-Queue.h
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Queue.h
-
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Queue.h
-Stack.h
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Stack.h
+D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/EmptyStackException.h
+exception
+-
 
 D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Stack.cpp
 Stack.h
@@ -23,12 +19,6 @@ iostream
 -
 climits
 -
-
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/main.cpp
-iostream
--
-Stack.h
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Stack.h
-Queue.h
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Queue.h
+EmptyStackException.h
+D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/EmptyStackException.h
 

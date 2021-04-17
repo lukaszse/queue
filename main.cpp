@@ -4,37 +4,19 @@
 
 using namespace std;
 int main() {
-    cout << "Implementacja stosu" << endl;
-
-    auto* stos = new Stack();
-
-    cout << stos->pop() << endl;
-
-    stos->push(1);
-    stos->push(2);
-    stos->push(3);
-
-    cout << stos->pop() << endl;
-    cout << stos->pop() << endl;
-    cout << stos->pop() << endl;
-    cout << stos->pop() << endl;
-    cout << stos->pop() << endl;
-
-    delete stos;
 
     cout << endl << "Implementacja kolejki na 2 stosach" << endl;
-
     auto* kolejka = new Queue();
+    int ILOSC_ELEMENTOW = 4;
 
-    kolejka->push(1);
-    kolejka->push(2);
-    kolejka->push(3);
+    for(int i = 1; i <= ILOSC_ELEMENTOW; i++) {
+        kolejka->add(i);
+    }
 
-    cout << kolejka->pop() << endl;
-    cout << kolejka->pop() << endl;
-    cout << kolejka->pop() << endl;
-    cout << kolejka->pop() << endl;
-    cout << kolejka->pop() << endl;
+    for(int i = 1; i <= ILOSC_ELEMENTOW; i++) {
+        cout << kolejka->poll() << endl;
+    }
 
+    delete kolejka;
     return 0;
 }

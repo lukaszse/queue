@@ -1,4 +1,3 @@
-
 #include "Queue.h"
 
 using namespace std;
@@ -14,21 +13,19 @@ Queue::~Queue() {
     cout << "Queue was deleted from memory";
 }
 
-void Queue::push(const int value) {
+void Queue::add(const int value) {
     mainStack->push(value);
 }
 
-int Queue::pop() {
-    if(mainStack->empty) {
-        cout << "Cannot pop element from empty queue" << endl;
-        return ELEMENT_NOT_EXIST;
+int Queue::poll() {
+    if(auxiliaryStack->empty) {
+        while (!mainStack->empty) {
+            auxiliaryStack->push(mainStack->pop());
+        }
     }
-    while (mainStack->size > 1) {
-        auxiliaryStack->push(mainStack->pop());
+    try {
+        return auxiliaryStack->pop();
+    } catch (EmptyStackException & e) {
+        throw EmptyQueueException(); // Implementacja wyjątku w osobnym pliku zamieszczona ponizej
     }
-    int value = mainStack->pop();
-    Stack* ptr = mainStack;
-    mainStack = auxiliaryStack;
-    auxiliaryStack = ptr;
-    return value;
 }

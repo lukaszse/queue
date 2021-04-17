@@ -1,4 +1,7 @@
+#include <limits>
 #include "Stack.h"
+#include "EmptyStackException.h"
+#include "EmptyQueueException.h"
 
 #ifndef INC_2STACKSTOQUEUE_QUEUE_H
 #define INC_2STACKSTOQUEUE_QUEUE_H
@@ -13,8 +16,8 @@ private:
 public:
     Queue();
     ~Queue();
-    void push(int);
-    int pop();
+    void add(int);
+    int poll();
 };
 
 
