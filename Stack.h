@@ -17,7 +17,6 @@ public:
 
     Stack();
     ~Stack();
-    Stack(const Stack &);
     void push(int);
     int pop();
 };
