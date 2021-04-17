@@ -3,4 +3,4 @@ project(2StacksToQueue)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(2StacksToQueue main.cpp Stack.cpp Stack.h Queue.cpp Queue.h)
+add_executable(2StacksToQueue main.cpp Stack.cpp Stack.h Queue.cpp Queue.h EmptyStackException.h EmptyQueueException.h)

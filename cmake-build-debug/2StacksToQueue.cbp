@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/EmptyQueueException.h">
+			<Option target="2StacksToQueue"/>
+		</Unit>
+		<Unit filename="D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/EmptyStackException.h">
+			<Option target="2StacksToQueue"/>
+		</Unit>
 		<Unit filename="D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Queue.cpp">
 			<Option target="2StacksToQueue"/>
 		</Unit>

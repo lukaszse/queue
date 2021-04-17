@@ -1,4 +1,7 @@
+#include <limits>
 #include "Stack.h"
+#include "EmptyStackException.h"
+#include "EmptyQueueException.h"
 
 #ifndef INC_2STACKSTOQUEUE_QUEUE_H
 #define INC_2STACKSTOQUEUE_QUEUE_H
@@ -7,14 +10,16 @@
 class Queue {
 
 private:
-    Stack* mainStack = new Stack;
-    Stack* secondStack = new Stack;
+    Stack* mainStack;
+    Stack* auxiliaryStack;
 
 public:
-    void push(int);
-    int pop();
-
-
+    Queue();
+    Queue(const Queue &);
+    ~Queue();
+    void add(int);
+    int poll();
+    void takeAll();
 };
 
 

@@ -2,18 +2,22 @@
 
 using namespace std;
 
+struct Stack::Element {
+    int value;
+    Element * next;
+};
+
 Stack::Stack() {
     top = nullptr;
     size = 0;
     empty = true;
 }
 
-struct Stack::Element {
-    int value;
-    Element * next;
-};
+Stack::~Stack() {
+    delete top;
+}
 
-void Stack::push(int value) {
+void Stack::push(const int value) {
     Element* ptr = top;
     top = new Element;
     top->value = value;
@@ -28,16 +32,14 @@ int Stack::pop() {
         Element *ptr = top;
         top = top->next;
         delete ptr;
-        ptr = NULL;
+        ptr = nullptr;
         size--;
-        if(size == 0) {         // if(top == NULL) can be use instead
-            empty = true;
-        }
+        top == nullptr ? empty = true : empty = false;
         return value;
     } else {
-        cout << "Cannot pop element from empty stack" << endl;
-        return ELEMENT_NOT_EXIST;
+        throw EmptyStackException(); // Implementacja wyjątku w osobnym pliku zamieszczona ponizej
     }
 }
+
 
 
