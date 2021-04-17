@@ -4,7 +4,6 @@
 
 #ifndef INC_2STACKSTOQUEUE_STACK_H
 #define INC_2STACKSTOQUEUE_STACK_H
-#define ELEMENT_NOT_EXIST INT_MIN
 
 class Stack {
 
