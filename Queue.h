@@ -15,7 +15,6 @@ private:
 
 public:
     Queue();
-    Queue(const Queue &);
     ~Queue();
     void add(int);
     int poll();

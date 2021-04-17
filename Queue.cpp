@@ -7,11 +7,6 @@ Queue::Queue() {
     auxiliaryStack = new Stack();
 }
 
-Queue::Queue(const Queue & queue) {
-    mainStack = queue.mainStack;
-    auxiliaryStack = queue.auxiliaryStack;
-}
-
 Queue::~Queue() {
     delete mainStack;
     delete auxiliaryStack;
