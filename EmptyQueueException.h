@@ -10,5 +10,4 @@ struct EmptyQueueException : public std::exception
         return "Cannot remove element from empty queue";
     }
 };
-
 #endif //INC_2STACKSTOQUEUE_EMPTYQUEUEEXCEPTION_H

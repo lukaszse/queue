@@ -10,5 +10,4 @@ struct EmptyStackException : public std::exception
         return "Cannot pop element from empty stack";
     }
 };
-
 #endif //INC_2STACKSTOQUEUE_EMPTYSTACKEXCEPTION_H

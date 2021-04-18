@@ -34,12 +34,10 @@ int Stack::pop() {
         delete ptr;
         ptr = nullptr;
         size--;
-        top == nullptr ? empty = true : empty = false;
+        if(top == nullptr) empty = true;
         return value;
     } else {
-        throw EmptyStackException(); // Implementacja wyjątku w osobnym pliku zamieszczona ponizej
+        // Implementacja wyjątku w osobnym pliku zamieszczona ponizej
+        throw EmptyStackException();
     }
 }
-
-
-

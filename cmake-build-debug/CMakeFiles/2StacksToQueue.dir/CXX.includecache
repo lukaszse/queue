@@ -6,23 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/EmptyQueueException.h
-exception
--
-
 D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/EmptyStackException.h
 exception
 -
 
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Queue.h
-limits
--
+D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Stack.cpp
 Stack.h
 D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Stack.h
-EmptyStackException.h
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/EmptyStackException.h
-EmptyQueueException.h
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/EmptyQueueException.h
 
 D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Stack.h
 iostream
@@ -31,12 +21,4 @@ climits
 -
 EmptyStackException.h
 D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/EmptyStackException.h
-
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/main.cpp
-iostream
--
-Stack.h
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Stack.h
-Queue.h
-D:/02_PROGRAMOWANIE/cpp/2StacksToQueue/Queue.h
 

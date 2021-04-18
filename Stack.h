@@ -20,6 +20,4 @@ public:
     void push(int);
     int pop();
 };
-
-
 #endif //INC_2STACKSTOQUEUE_STACK_H

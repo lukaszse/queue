@@ -6,7 +6,6 @@
 #ifndef INC_2STACKSTOQUEUE_QUEUE_H
 #define INC_2STACKSTOQUEUE_QUEUE_H
 
-
 class Queue {
 
 private:
@@ -20,6 +19,4 @@ public:
     int poll();
     void takeAll();
 };
-
-
 #endif //INC_2STACKSTOQUEUE_QUEUE_H
