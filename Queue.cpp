@@ -43,3 +43,8 @@ void Queue::takeAll() {
     cout << endl << endl;
 }
 
+void Queue::printState() {
+    cout << "Rozmiar stosu glownego (in): " << mainStack->size << endl;
+    cout << "Rozmiar stosu pomcniczego (out): " << auxiliaryStack->size << endl;
+    cout << "Rozmiar kolejki: " << mainStack->size + auxiliaryStack->size << endl;
+}

@@ -18,5 +18,6 @@ public:
     void add(int);
     int poll();
     void takeAll();
+    void printState();
 };
 #endif //INC_2STACKSTOQUEUE_QUEUE_H
